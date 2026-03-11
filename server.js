@@ -5,6 +5,8 @@ const logger = require('./src/utils/logger');
 
 const PORT = process.env.PORT || 5000;
 
+
+
 connectDB().then(() => {
   app.listen(PORT, () => {
     logger.info(`🌙 Sleep Analyzer API running on port ${PORT} in ${process.env.NODE_ENV} mode`);
